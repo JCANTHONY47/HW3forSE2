@@ -25,11 +25,19 @@ class Question1 extends StatelessWidget {
               child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              SizedBox(width: 10), // Space between widgets
               Icon(Icons.favorite, color: Colors.red),
-              Icon(Icons.comment, color: Colors.black),
+              SizedBox(width: 10), // Space between widgets
+              Transform(
+                alignment: Alignment.center,
+                transform: Matrix4.rotationY(3.14),
+                child: Icon(Icons.comment, color: Colors.black),
+              ),
+              SizedBox(width: 10), // Space between widgets
               Icon(Icons.play_arrow, color: Colors.black),
               Spacer(), // Spacing between icons
               Icon(Icons.bookmark_border_outlined, color: Colors.black),
+              SizedBox(width: 10), // Space between widgets
 
               // ADD YOUR WIDGETS HERE
 

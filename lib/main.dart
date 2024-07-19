@@ -28,7 +28,7 @@ class MainPage extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text('Question 1'),
                   onPressed: () {
                     Navigator.push(
@@ -40,7 +40,7 @@ class MainPage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text('Question 2'),
                   onPressed: () {
                     Navigator.push(
@@ -52,7 +52,7 @@ class MainPage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text('Question 3'),
                   onPressed: () {
                     Navigator.push(
@@ -64,7 +64,7 @@ class MainPage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text('Question 4'),
                   onPressed: () {
                     Navigator.push(

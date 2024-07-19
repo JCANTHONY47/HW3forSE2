@@ -36,7 +36,7 @@ class Question2 extends StatelessWidget {
                 'Edinburg, Texas',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.grey[600],
+                  color: Colors.black,
                 ),
               ),
             // ADD YOUR WIDGETS HERE
