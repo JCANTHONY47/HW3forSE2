@@ -19,11 +19,26 @@ class Question2 extends StatelessWidget {
           },
         ),
         title: Text('Question 2: Columns'),
+        centerTitle: true,
       ),
       body: Column(
           crossAxisAlignment: CrossAxisAlignment.start, 
           children: <Widget>[
-
+              Text(
+                'Lucas Lepri',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(height: 4), // Spacing between name and location
+              Text(
+                'Edinburg, Texas',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.grey[600],
+                ),
+              ),
             // ADD YOUR WIDGETS HERE
 
           ]),
