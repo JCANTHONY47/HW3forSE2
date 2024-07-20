@@ -28,7 +28,7 @@ class Question2 extends StatelessWidget {
                 'Lucas Lepri',
                 style: TextStyle(
                   fontSize: 24,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.normal,
                 ),
               ),
               SizedBox(height: 4), // Spacing between name and location

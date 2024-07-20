@@ -37,21 +37,25 @@ class _Question4State extends State<Question4> {
 
   Widget _buildPost(String name, String location, String imageUrl) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.only(top: 10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Row(
             children: <Widget>[
+              SizedBox(width: 10),
               CircleAvatar(
+                
                 backgroundColor: Colors.blue,
                 radius: 24,
               ),
-              SizedBox(width: 16),
+              SizedBox(width: 16, ),
+              
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
+                    
                     name,
                     style: TextStyle(
                       fontSize: 20,
@@ -83,17 +87,17 @@ class _Question4State extends State<Question4> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               SizedBox(width: 10), // Space between widgets
-              Icon(Icons.favorite, color: Colors.red),
+              Icon(Icons.favorite, color: Colors.red, size: 40.0),
               SizedBox(width: 10), // Space between widgets
               Transform(
                 alignment: Alignment.center,
                 transform: Matrix4.rotationY(3.14),
-                child: Icon(Icons.comment, color: Colors.black),
+                child: Icon(Icons.comment, color: Colors.black, size: 40.0),
               ),
               SizedBox(width: 10), // Space between widgets
-              Icon(Icons.play_arrow, color: Colors.black),
+              Icon(Icons.send, color: Colors.black, size: 40.0),
               Spacer(), // Spacing between icons
-              Icon(Icons.bookmark_border_outlined, color: Colors.black),
+              Icon(Icons.bookmark_border_outlined, color: Colors.black, size: 40.0),
               SizedBox(width: 10), // Space between widgets
             ],
           ),

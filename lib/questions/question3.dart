@@ -22,6 +22,8 @@ class Question3 extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
+          child: Padding(
+          padding: const EdgeInsets.only(top: 100), // Adjust this value to move the content down
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
@@ -60,7 +62,7 @@ class Question3 extends StatelessWidget {
                 color: Color(0xFF455A64),
                 strokeWidth: 2.0,
                 fallbackWidth: 400.0,
-                fallbackHeight: 200.0,
+                fallbackHeight: 400.0,
               ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -68,22 +70,23 @@ class Question3 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
               SizedBox(width: 10), // Space between widgets
-              Icon(Icons.favorite, color: Colors.red),
+              Icon(Icons.favorite, color: Colors.red, size: 40.0),
               SizedBox(width: 10), // Space between widgets
               Transform(
                 alignment: Alignment.center,
                 transform: Matrix4.rotationY(3.14),
-                child: Icon(Icons.comment, color: Colors.black),
+                child: Icon(Icons.comment, color: Colors.black, size: 40.0),
               ),
               SizedBox(width: 10), // Space between widgets
-              Icon(Icons.play_arrow, color: Colors.black),
+              Icon(Icons.send, color: Colors.black, size: 40.0),
               Spacer(), // Spacing between icons
-              Icon(Icons.bookmark_border_outlined, color: Colors.black),
+              Icon(Icons.bookmark_border_outlined, color: Colors.black, size: 40.0),
               SizedBox(width: 10), // Space between widgets
-                  ],
+                 ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
